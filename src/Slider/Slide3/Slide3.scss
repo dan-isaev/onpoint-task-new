@@ -1,0 +1,217 @@
+.slide3 {
+    width: 2048px;
+    height: 1536px;
+    box-sizing: border-box;
+
+    color: white;
+
+    &__header {
+        font-family: GothamPro;
+        font-size: 60px;
+        margin-top: 215px;
+        margin-left: 150px;
+    }
+    
+    &__schema {
+        background: url("../images/schema_3_base.png") 450px 80px no-repeat;
+        width: 1831px;
+        height: 1000px;
+        position: relative;
+		margin: 10px auto 0;
+        
+        font-size: 40px;
+    }
+
+    &__bigTxt {
+        font-size: 72.75px;
+		font-family: Lato Semibold;
+    }
+
+    &__iceblocks {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &__img1 {
+        top: 100px;
+        left: 920px;
+    }
+    
+    &__txt1 {
+        top: 0;
+        left: 820px;
+        
+        font-size: 50px;
+    }
+    
+    &__txt2 {
+        top: 408px;
+        left: 610px;
+        
+        text-align: right;
+    }
+    
+    &__txt3 {
+        top: 408px;
+        left: 988px;
+        
+        text-align: left;
+    }
+    
+    &__img4 {
+        top: 849px;
+        left: 1360px;
+        background: url("../images/lipid.png");
+        width: 92px;
+        height: 93px;
+    }
+    
+    &__txt4 {
+        top: 833px;
+        left: 1490px;
+        
+        text-align: left;
+    }
+    
+    &__img5 {
+        top: 680px;
+        left: 1352px;
+        
+        background: url("../images/muscles.png") center no-repeat;
+        width: 109px;
+        height: 84px;
+        background-size: 100%;
+    }
+    
+    &__txt5 {
+        top: 660px;
+        left: 1490px;
+        
+        text-align: left;
+    }
+    
+    &__img6 {
+        top: 511px;
+        left: 1352px;
+        
+        background: url("../images/liver.png") center no-repeat;
+        width: 104px;
+        height: 107px;
+        background-size: 100%;
+    }
+    
+    &__txt6 {
+        top: 492px;
+        left: 1490px;
+        
+        text-align: left;
+    }
+    
+    &__img7 {
+        top: 202px;
+        left: 1351px;
+        
+        background: url("../images/brain.png");
+        width: 93px;
+        height: 85px;
+    }
+    
+    &__txt7 {
+        top: 179px;
+        left: 1490px;
+        
+        text-align: left;
+    }
+    
+    &__img8 {
+        top: 184px;
+        left: 470px;
+        
+        background: url("../images/bowels.png");
+        width: 86px;
+        height: 125px;
+    }
+    
+    &__txt8 {
+        top: 160px;
+        left: 180px;
+        
+        text-align: right;
+    }
+    
+    &__img9 {
+        top: 383px;
+        left: 460px;
+        
+        background: url("../images/infection.png");
+        width: 97px;
+        height: 92px;
+    }
+    
+    &__txt9 {
+        top: 350px;
+        left: 0;
+        
+        text-align: right;
+    }
+    
+    &__img10 {
+        top: 676px;
+        left: 470px;
+
+        
+        background: url("../images/stomach.png");
+        width: 84px;
+        height: 84px;
+    }
+    
+    &__txt10 {
+        top: 640px;
+        left: 250px;
+        
+        text-align: right;
+    }
+    
+    &__img11 {
+        top: 838px;
+        left: 910px;
+        
+        background: url("../images/kidney.png");
+        width: 87px;
+        height: 93px;
+    }
+    
+    &__txt11 {
+        top: 840px;
+        left: 760px;
+        
+        text-align: right;
+    }
+    
+    &__txt12 {
+        top: 700px;
+        left: 780px;
+        
+        font-size: 50px;
+    }
+
+    &__txt13, &__txt14, &__txt15 {
+        font-size: 30px;
+    }
+    
+    &__txt15 {
+        top: 420px;
+        left: 1390px;
+    }
+    
+    &__txt13 {
+        top: 550px;
+        left: 440px;
+    }
+    
+    &__txt14 {
+        top: 580px;
+        left: 990px;
+    }
+}

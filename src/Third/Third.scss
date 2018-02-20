@@ -1,0 +1,13 @@
+.third {
+	background: url("images/bg_3.png") center no-repeat;
+    height: 1536px;
+    display: flex;
+    justify-content: center;
+    
+    &__sheet {
+        width: 2048px;
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+    }
+}

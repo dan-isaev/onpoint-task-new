@@ -1,0 +1,38 @@
+.slide2 {
+    width: 2048px;
+    height: 1536px;
+    box-sizing: border-box;
+
+    color: white;
+
+    &__header {
+        font-family: GothamPro;
+        font-size: 60px;
+        margin-top: 215px;
+        margin-left: 150px;
+    }
+
+    &__schema {
+        background: url("../images/schema_2_base.png") 0 140px no-repeat;
+        width: 1522px;
+        height: 1000px;
+        position: relative;
+		margin: 20px auto 0;
+        
+        font-size: 40px;
+        line-height: 1.2;
+        text-align: center;
+                        
+    }
+
+    &__bigTxt {
+        font-size: 72.75px;
+		font-family: Lato Semibold;
+    }
+
+    &__iceblocks {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}

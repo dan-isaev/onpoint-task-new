@@ -1,0 +1,95 @@
+.slide1 {
+    width: 2048px;
+    height: 1536px;
+    box-sizing: border-box;
+
+    color: white;
+
+    &__header {
+        font-family: GothamPro;
+        font-size: 60px;
+        margin-top: 215px;
+        margin-left: 150px;
+    }
+
+    &__iceblocks {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &__schema {
+        background: url("../images/schema_1_base.png") 0 140px no-repeat;
+        width: 1155px;
+        height: 1000px;
+        position: relative;
+		margin: 90px auto 0;
+        
+        font-family: Lato Medium;
+        text-align: center;
+        font-size: 45.47px;
+    }
+
+    &__bigTxt {
+        font-size: 72.75px;
+		font-family: Lato Semibold;
+    }
+
+    &__img1 {
+        position: absolute;
+        top: 150px;
+        left: 540px;
+
+        font-size: 133.08px;
+        font-family: Lato Bold;
+    }
+    
+    &__txt1 {
+        position: absolute;
+        top: 0;
+        left: 480px;
+    }
+    
+    &__img2 {
+        position: absolute;
+        top: 510px;
+        left: 20px;
+        background: url("../images/muscles.png");
+        width: 129px;
+        height: 84px;
+    }
+    
+    &__txt2 {
+        position: absolute;
+        top: 320px;
+        left: 10px;
+    }
+    
+    &__img3 {
+        position: absolute;
+        top: 510px;
+        left: 1020px;
+        background: url("../images/liver.png");
+        width: 114px;
+        height: 107px;
+    }
+    
+    &__txt3 {
+        position: absolute;
+        top: 320px;
+        left: 1000px;
+    }
+    
+    &__txt4 {
+        $h: 175px;
+    
+        position: absolute;
+        top: 477px;
+        left: 324px;
+        width: 490px;
+        height: $h;
+        
+        line-height: 175px;
+        font-size: 39.61px;
+    }
+}

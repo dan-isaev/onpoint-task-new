@@ -1,0 +1,111 @@
+.ellipse {
+    background: rgba(242, 129, 32, 0.22);
+    border: 2px solid #d64629;
+    box-sizing: border-box;
+    position: relative;
+    width: 107px;
+    height: 107px;
+    border-radius: 50%;
+
+    &__second, &__third, &__fourth {
+        position: absolute;
+        box-sizing: border-box;
+
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    &__second {
+        background: rgba(242, 129, 32, 0.48);
+        border: 2px solid #d64629;
+        border-radius: 50%;
+        width: 65.42%;
+        height: 65.42%;
+        top: 17.29%;
+        left: 17.29%;
+
+        animation-name: ellipse__animateSecond;
+    }
+
+    &__third {
+        background: rgba(214, 70, 41, 0.62);
+
+        width: 30.84%;
+        height: 30.84%;
+        border-radius: 50%;
+        top: 34.58%;
+        left: 34.58%;
+
+        animation-name: ellipse__animateThird;        
+    }
+
+    &__fourth {
+        background: rgba(214, 70, 41, 0.62);
+        opacity: 0.62;
+
+        width: 0;
+        height: 0;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+
+        animation-name: ellipse__animateFourth;        
+    }
+}
+
+@keyframes ellipse__animateSecond {
+	from {
+        width: 65.42%;
+        height: 65.42%;
+        top: 17.29%;
+        left: 17.29%;
+        background: rgba(242, 129, 32, 0.48);
+	}
+	to {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(242, 129, 32, 0.22);
+	}
+}
+
+@keyframes ellipse__animateThird {
+    from {
+		top: 34.58%;
+        left: 34.58%;
+		background: rgba(214, 70, 41, 0.62);
+		width: 30.84%;
+        height: 30.84%;
+		opacity: 0.62;
+		border-width: 0;
+		border-color: #d64629;
+		border-style: solid;
+	}
+	to {
+		top: 17.29%;
+        left: 17.29%;
+		width: 65.42%;
+        height: 65.42%;
+		background: rgba(242,129,32,0.48);
+		border-width: 2px;
+		border-color: #d64629;
+		border-style: solid;
+	}
+}
+
+@keyframes ellipse__animateFourth {
+    from {
+		width: 0;
+        height: 0;
+        top: 50%;
+        left: 50%;
+	}
+	to {
+		width: 30.84%;
+        height: 30.84%;
+		top: 34.58%;
+        left: 34.58%;
+	}
+}

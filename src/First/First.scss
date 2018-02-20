@@ -1,0 +1,84 @@
+.first {
+    background: url("images/iceberg.png") top center no-repeat;
+    height: 1578px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    &__sheet {
+        width: 2048px;
+        position: relative;
+        height: 100%;
+    }
+
+    &__header {
+        display: block;
+        position: absolute;
+        top: 290px;
+        left: 130px;
+
+        font-family: GothamPro;
+        font-size: 100px;
+        color: #0d319c;
+    }
+
+    &__mainList {
+        font-family: Lato Regular;
+        font-size: 40px;
+        color: #0d319c;
+    }
+
+    &__mainListItem {
+        position: absolute;
+
+        &:nth-child(1) {
+            top: 553px;
+            left: 1250px;
+        }
+
+        &:nth-child(2) {
+            top: 790px;
+            left: 447px;
+        }
+
+        &:nth-child(3) {
+            top: 1010px;
+            left: 740px;
+        }
+
+        &:nth-child(4) {
+            top: 970px;
+            left: 1580px;
+        }
+    }
+
+    &__ellipsesBlock {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .ellipse {
+        position: absolute;
+    }
+
+    .ellipse:nth-of-type(1) {
+        top: 522px;
+        left: 1123px;
+    }
+
+    .ellipse:nth-of-type(2) {
+        top: 854px;
+		left: 547px;
+    }
+
+    .ellipse:nth-of-type(3) {
+        top: 1075px;
+		left: 957px;
+    }
+
+    .ellipse:nth-of-type(4) {
+        top: 1033px;
+		left: 1643px;
+    }
+}

@@ -4,18 +4,27 @@ import { Slide1 } from './Slide1';
 import { Slide2 } from './Slide2';
 import { Slide3 } from './Slide3';
 import { Roller } from './Roller';
+import './Slider.css';
 
-export const Slider = (): JSX.Element => {
+interface SliderProps {
+    onValueChange?: (value: number) => void;
+    slidesStripeRef: (element: HTMLElement) => void;
+}
+
+export const Slider = ({
+    onValueChange,
+    slidesStripeRef
+}: SliderProps): JSX.Element => {
     return (
         <div className="slider">
-            <div className="slider__slidesBlock" id="schemas_slider">
-                <ul className="slider__slidesStripe">
+            <div className="slider__slidesBlock">
+                <ul className="slider__slidesStripe" ref={slidesStripeRef}>
                     <Slide1 />
                     <Slide2 />
                     <Slide3 />
                 </ul>
             </div>
-            <Roller />
+            <Roller onValueChange={onValueChange} />
         </div>
     );
 };

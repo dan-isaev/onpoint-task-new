@@ -2,6 +2,7 @@
     width: 2048px;
     height: 1536px;
     box-sizing: border-box;
+    position: relative;
 
     color: white;
 
@@ -13,7 +14,7 @@
     }
 
     &__schema {
-        background: url("../images/schema_2_base.png") 0 140px no-repeat;
+        background: url("../images/schema_2_base.png") 140px 150px no-repeat;
         width: 1522px;
         height: 1000px;
         position: relative;
@@ -22,7 +23,7 @@
         font-size: 40px;
         line-height: 1.2;
         text-align: center;
-                        
+        font-family: Lato Medium;
     }
 
     &__bigTxt {
@@ -34,5 +35,188 @@
         position: absolute;
         top: 0;
         left: 0;
+    }
+
+    &__iceblock {
+        position: absolute;
+    }
+
+    &__iceblock:nth-of-type(1) {
+        background: url('../images/iceblock_3_2_1.png');
+        width: 213px;
+        height: 202px;
+        top: 480px;
+        left: 40px;
+        opacity: .5;
+    }
+
+    &__iceblock:nth-of-type(2) {
+        background: url('../images/iceblock_3_2_2.png');
+        width: 76px;
+        height: 77px;
+        top: 180px;
+        left: 880px;
+        opacity: .5;
+    }
+
+    &__iceblock:nth-of-type(3) {
+        background: url('../images/iceblock_3_2_3.png');
+        width: 433px;
+        height: 410px;
+        top: 1150px;
+        left: 1770px;
+        opacity: .5;
+    }
+
+    &__img1 {
+        position: absolute;
+        top: 140px;
+        left: 690px;
+
+        font-size: 133.08px;
+        font-family: Lato Bold;
+    }
+    
+    &__txt1 {
+        position: absolute;
+        top: 0;
+        left: 640px;
+        
+        text-align: center;
+    }
+    
+    &__img2 {
+        position: absolute;
+        top: 170px;
+        left: 390px;
+        
+        font-size: 72.75px;
+        font-family: Lato Semibold;
+    }
+    
+    &__txt2 {
+        position: absolute;
+        top: 160px;
+        left: 40px;
+        
+        text-align: right;
+    }
+    
+    &__img3 {
+        position: absolute;
+        top: 170px;
+        left: 1010px;
+        
+        font-size: 72.75px;
+        font-family: Lato Semibold;
+    }
+    
+    &__txt3 {
+        position: absolute;
+        top: 160px;
+        left: 1120px;
+    }
+    
+    &__img4 {
+        position: absolute;
+        top: 458px;
+        left: 1197px;
+        background: url("../images/lipid.png");
+        width: 92px;
+        height: 93px;
+    }
+    
+    &__txt4 {
+        position: absolute;
+        top: 450px;
+        left: 1330px;
+    }
+    
+    &__img5 {
+        position: absolute;
+        top: 704px;
+        left: 975px;
+        
+        background: url("../images/muscles.png") center no-repeat;
+        width: 109px;
+        height: 84px;
+        background-size: 100%;
+    }
+    
+    &__txt5 {
+        position: absolute;
+        top: 820px;
+        left: 950px;
+        
+        text-align: center;
+    }
+    
+    &__img6 {
+        position: absolute;
+        top: 703px;
+        left: 676px;
+        
+        background: url("../images/liver.png") center no-repeat;
+        width: 104px;
+        height: 107px;
+        background-size: 100%;
+    }
+    
+    &__txt6 {
+        position: absolute;
+        top: 820px;
+        left: 650px;
+        
+        text-align: center;
+    }
+    
+    &__img7 {
+        position: absolute;
+        top: 703px;
+        left: 363px;
+        
+        background: url("../images/brain.png");
+        width: 93px;
+        height: 85px;
+    }
+    
+    &__txt7 {
+        position: absolute;
+        top: 820px;
+        left: 320px;
+        
+        text-align: center;
+    }
+    
+    &__img8 {
+        position: absolute;
+        top: 440px;
+        left: 150px;
+        
+        background: url("../images/kidney.png");
+        width: 87px;
+        height: 93px;
+    }
+    
+    &__txt8 {
+        position: absolute;
+        top: 450px;
+        left: 0;
+        
+        text-align: right;
+    }
+    
+    &__txt9 {
+        position: absolute;
+        $h: 278px;
+    
+        top: 340px;
+        left: 331px;
+        height: $h;
+        width: 770px;
+    
+        line-height: $h;
+        text-align: center;
+        font-size: 50px;
     }
 }

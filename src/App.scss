@@ -49,6 +49,14 @@ time, mark, audio, video {
   src: url("fonts/Lato-Medium.ttf");
 }
 
+html {
+  line-height: 1;
+}
+
 ol, ul {
   list-style: none;
+}
+
+body {
+  width: 2048px;
 }

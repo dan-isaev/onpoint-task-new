@@ -3,8 +3,14 @@
     width: 100%;
     height: 1536px;
 
+    &__slidesBlock {
+        display: flex;
+    }
+
     &__slidesStripe {
         display: flex;
-		position: relative;
+        position: relative;
+        
+        transition: .5s;
     }
 }

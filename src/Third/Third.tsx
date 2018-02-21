@@ -3,9 +3,15 @@ import * as React from 'react';
 import './Third.css';
 import { Slider } from '../Slider';
 
-export const Third = (): JSX.Element => {
+interface ThirdProps {
+    rootRef: (element: HTMLElement) => void;
+}
+
+export const Third = ({
+    rootRef
+}: ThirdProps): JSX.Element => {
     return (
-        <div className="third" id="slide3">
+        <div className="third" ref={rootRef}>
             <div className="third__sheet">
                 <Slider />
             </div>

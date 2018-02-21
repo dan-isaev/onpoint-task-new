@@ -2,6 +2,7 @@
     width: 2048px;
     height: 1536px;
     box-sizing: border-box;
+    position: relative;
 
     color: white;
 
@@ -20,6 +21,7 @@
 		margin: 10px auto 0;
         
         font-size: 40px;
+        font-family: Lato Medium;
     }
 
     &__bigTxt {
@@ -33,12 +35,48 @@
         left: 0;
     }
 
+    &__iceblock {
+        position: absolute;
+    }
+
+    &__iceblock:nth-of-type(1) {
+        background: url('../images/iceblock_3_3_1.png');
+        background-size: 100%;
+        width: 213px;
+        height: 203px;
+        top: 430px;
+        left: 1870px;
+    }
+
+    &__iceblock:nth-of-type(2) {
+        background: url('../images/iceblock_3_3_2.png');
+        background-size: 100%;
+        width: 76px;
+        height: 77px;
+        top: 210px;
+        left: -10px;
+    }
+
+    &__iceblock:nth-of-type(3) {
+        background: url('../images/iceblock_3_3_3.png');
+        background-size: 100%;
+        width: 383px;
+        height: 403px;
+        top: 1170px;
+        left: 280px;
+    }
+
     &__img1 {
+        position: absolute;
         top: 100px;
         left: 920px;
+
+        font-size: 133.08px;
+        font-family: Lato Bold;
     }
     
     &__txt1 {
+        position: absolute;
         top: 0;
         left: 820px;
         
@@ -46,6 +84,7 @@
     }
     
     &__txt2 {
+        position: absolute;
         top: 408px;
         left: 610px;
         
@@ -53,6 +92,7 @@
     }
     
     &__txt3 {
+        position: absolute;
         top: 408px;
         left: 988px;
         
@@ -60,6 +100,7 @@
     }
     
     &__img4 {
+        position: absolute;
         top: 849px;
         left: 1360px;
         background: url("../images/lipid.png");
@@ -68,6 +109,7 @@
     }
     
     &__txt4 {
+        position: absolute;
         top: 833px;
         left: 1490px;
         
@@ -75,6 +117,7 @@
     }
     
     &__img5 {
+        position: absolute;
         top: 680px;
         left: 1352px;
         
@@ -85,6 +128,7 @@
     }
     
     &__txt5 {
+        position: absolute;
         top: 660px;
         left: 1490px;
         
@@ -92,6 +136,7 @@
     }
     
     &__img6 {
+        position: absolute;
         top: 511px;
         left: 1352px;
         
@@ -102,6 +147,7 @@
     }
     
     &__txt6 {
+        position: absolute;
         top: 492px;
         left: 1490px;
         
@@ -109,6 +155,7 @@
     }
     
     &__img7 {
+        position: absolute;
         top: 202px;
         left: 1351px;
         
@@ -118,6 +165,7 @@
     }
     
     &__txt7 {
+        position: absolute;
         top: 179px;
         left: 1490px;
         
@@ -125,6 +173,7 @@
     }
     
     &__img8 {
+        position: absolute;
         top: 184px;
         left: 470px;
         
@@ -134,6 +183,7 @@
     }
     
     &__txt8 {
+        position: absolute;
         top: 160px;
         left: 180px;
         
@@ -141,6 +191,7 @@
     }
     
     &__img9 {
+        position: absolute;
         top: 383px;
         left: 460px;
         
@@ -150,6 +201,7 @@
     }
     
     &__txt9 {
+        position: absolute;
         top: 350px;
         left: 0;
         
@@ -157,6 +209,7 @@
     }
     
     &__img10 {
+        position: absolute;
         top: 676px;
         left: 470px;
 
@@ -167,6 +220,7 @@
     }
     
     &__txt10 {
+        position: absolute;
         top: 640px;
         left: 250px;
         
@@ -174,6 +228,7 @@
     }
     
     &__img11 {
+        position: absolute;
         top: 838px;
         left: 910px;
         
@@ -183,6 +238,7 @@
     }
     
     &__txt11 {
+        position: absolute;
         top: 840px;
         left: 760px;
         
@@ -190,6 +246,7 @@
     }
     
     &__txt12 {
+        position: absolute;
         top: 700px;
         left: 780px;
         
@@ -197,6 +254,7 @@
     }
 
     &__txt13, &__txt14, &__txt15 {
+        position: absolute;
         font-size: 30px;
     }
     

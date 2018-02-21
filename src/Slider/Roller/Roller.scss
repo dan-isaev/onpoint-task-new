@@ -17,10 +17,12 @@
         background: #d1eaff;
 
         transition: .3s;
+        transition-timing-function: linear;        
     }
 
     &__handlebar {
         position: relative;
+        margin-top: 43px;
         height: 24px;
         background: rgba(209, 234, 255, 0.3);
     }
@@ -37,12 +39,15 @@
         background: url("images/polygon.png");
         width: 87px;
         height: 111px;
-        margin-top: -43px;
         margin-left: -30px;
         outline: none;
         cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 0;
 
         transition: .3s;
+        transition-timing-function: linear;
     }
 
     &__years {

@@ -6,6 +6,11 @@ export const Slide3 = (): JSX.Element => {
     return (
         <div className="slide3">
             <h2 className="slide3__header">Звенья патогенеза СД2</h2>
+            <ul className="slide3__iceblocks">
+                <li className="slide3__iceblock"></li>
+                <li className="slide3__iceblock"></li>
+                <li className="slide3__iceblock"></li>
+            </ul>
             <div className="slide3__schema">
                 <div className="slide3__img1">β</div>
                 <div className="slide3__txt1"><span className="slide3__bigTxt">1</span> β-клетки</div>
@@ -42,11 +47,6 @@ export const Slide3 = (): JSX.Element => {
                 <div className="slide3__txt14">↑ глюкагон</div>
                 <div className="slide3__txt15">Инсулинорезистентность</div>
             </div>
-            <ul className="slide3__iceblocks">
-                <li className="slide3__iceblock"></li>
-                <li className="slide3__iceblock"></li>
-                <li className="slide3__iceblock"></li>
-            </ul>
         </div>
     );
 };

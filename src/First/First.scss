@@ -58,6 +58,38 @@
         left: 0;
     }
 
+    &__toNextButton {
+        position: absolute;
+        width: 100%;
+        top: 1261px;
+        left: 0;
+        height: 275px;
+        background: url("images/glow.png");
+        box-sizing: border-box;
+        cursor: pointer;
+        
+        font-family: GothamPro;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+
+        &_hidden {
+            display: none;
+        }
+    }
+
+    &__toNextButtonTxt {
+        margin-top: 130px;                
+    }
+
+    &__toNextButtonArrow {
+        background: url("images/arrow_down.png");
+		width: 88px;
+		height: 44px;
+		
+		margin: 30px auto 0;
+    }
+
     .ellipse {
         position: absolute;
     }

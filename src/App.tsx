@@ -4,58 +4,44 @@ import './App.css';
 import { First } from './First';
 import { Second } from './Second';
 import { Third } from './Third';
-import { throttle } from './Utils';
+import { Nav } from './Nav';
 
 interface AppProps {
-
+  firstRef: (element: HTMLElement) => void;
+  secondRef: (element: HTMLElement) => void;
+  secondIceBlocksRef: (element: HTMLElement) => void;
+  thirdRef: (element: HTMLElement) => void;
+  onNavItemClick: (value: number) => void;
+  onToNextButtonClick: () => void;
+  navValue: number;
+  firstShowToNextButton: boolean;
 }
 
-class App extends React.Component<AppProps> {
-  private mouseMoveHandler: (event: MouseEvent) => void;
-
-  constructor(props: AppProps) {
-    super(props);
-
-    this.mouseMoveHandler = throttle(
-      (event: MouseEvent) => {
-        const info = document.getElementById('info');
-      
-        if (info) {
-          info.style.top = `${event.pageY + 15}px`;
-          info.style.left = `${event.pageX + 15}px`;
-          info.innerHTML = `top: ${event.pageY}<br />left: ${event.pageX}`;
-        }
-      },
-      10);
-  }
-
-  render() {
+export const App = ({
+  firstRef,
+  secondRef,
+  secondIceBlocksRef,
+  thirdRef,
+  onNavItemClick,
+  navValue,
+  onToNextButtonClick,
+  firstShowToNextButton
+}: AppProps) => {
     return (
       <div className="App">
-        <First />
-        <Second />
-        <Third />
-        <div
-          id="info"
-          style={{
-            display: 'none',
-            position: 'absolute',
-            background: '#fff',
-            width: '100px',
-            height: '50px'
-          }}
+        <First
+          rootRef={firstRef}
+          onToNextButtonClick={() => onNavItemClick(1)}
+          showToNextButton={firstShowToNextButton}
+        />
+        <Second rootRef={secondRef} iceBlocksRef={secondIceBlocksRef} />
+        <Third rootRef={thirdRef} />
+        <Nav
+          onItemClick={onNavItemClick}
+          value={navValue}
         />
       </div>
     );
-  }
-
-  public componentDidMount() {
-    document.addEventListener('mousemove', this.mouseMoveHandler);
-  }
-
-  public componentWillUnmount() {
-    document.removeEventListener('mousemove', this.mouseMoveHandler);
-  }
-}
+};
 
 export default App;

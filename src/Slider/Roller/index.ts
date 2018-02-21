@@ -1,3 +1,3 @@
-import { Roller } from './Roller';
+import { RollerContainer } from './RollerContainer';
 
-export { Roller };
+export { RollerContainer as Roller };

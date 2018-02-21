@@ -1,0 +1,22 @@
+.nav {
+    position: fixed;
+	top: 700px;
+	right: 54px;
+
+    &__item {
+        $d: 27px;
+	
+		width: $d;
+		height: $d;
+		border-radius: $d / 2;
+		background: white;
+		box-sizing: border-box;
+		margin-bottom: 14px;
+		cursor: pointer;
+		transition: 0.5s;
+    }
+
+    &__item_active {
+        background: #f78b1f;
+    }
+}

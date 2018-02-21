@@ -43,7 +43,27 @@ export const getRectCoords = (element: HTMLElement): Coords => {
     return {
         top: box.top + pageYOffset,
         left: box.left + pageXOffset,
-        right: box.right,
-        bottom: box.bottom
+        right: box.right + pageXOffset,
+        bottom: box.bottom +  + pageYOffset
     };
+};
+
+export const scrollTopTo = (element: HTMLElement, ms: number = 0    ): void => {
+    const start = performance.now();
+    const initialScrollTop = window.pageYOffset;
+
+    requestAnimationFrame(function animate(time: number) {
+        let timePassed = time - start;
+
+        if (timePassed > ms) {
+            timePassed = ms;
+        }
+
+        window.scrollTo(0, initialScrollTop + (getRectCoords(element).top - initialScrollTop) * timePassed / ms);
+
+        if (timePassed < ms) {
+            requestAnimationFrame(animate);
+        }
+
+    });
 };
